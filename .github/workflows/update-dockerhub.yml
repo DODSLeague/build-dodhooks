@@ -1,4 +1,4 @@
-name: Update-Docker-Hub-Description
+name: Update Docker Hub Description
 
 on:
   push:
@@ -18,5 +18,5 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           repository: dodsleague/build-dodhooks
-          short-description: ""DODSLeague dodhooks build container"
+          short-description: "DODSLeague dodhooks build container"
           readme-filepath: ./README.md
