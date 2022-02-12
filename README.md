@@ -15,6 +15,6 @@ docker pull dodsleague/build-dodhooks:latest;
 ### Run dodhooks build
 run in dodhooks source Folder
 ```shell
-docker run -it --rm -v $PWD:/WORKDIR/dodhooks --net=host dodsleague/build-dodhooks:latest
+docker run -it --rm -v $PWD:/WORKDIR/dodhooks dodsleague/build-dodhooks:latest
 ```
 

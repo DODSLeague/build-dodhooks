@@ -3,8 +3,20 @@ name: linux/amd64
 on:
   push:
     branches: [ main ]
+    paths:
+      - '**'
+      - '!README.md'
+      - '!LICENSE'
+      - '!.github/workflows/update-dockerhub.yml'
+      - '!.github/dependabot.yml'
   pull_request:
     branches: [ main ]
+    paths:
+      - '**'
+      - '!README.md'
+      - '!LICENSE'
+      - '!.github/workflows/update-dockerhub.yml'
+      - '!.github/dependabot.yml'
 
   repository_dispatch: # Allows action to be triggered via webhook
 
